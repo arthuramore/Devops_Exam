@@ -18,7 +18,7 @@ stage('Docker login to hub and push the image'){
 sh "docker login -u 'arthuramore' -p 'Kodisha_19' "
 sh "docker tag arthur_amore:latest arthuramore/arthur_amore:latest"
 sh "docker push arthuramore/arthur_amore:latest"
-sh "docker run -t -i --privileged ubuntu bash"
+sh " docker run -d jenkins"
 }
 
 stage('Apply changes to the environment') {
